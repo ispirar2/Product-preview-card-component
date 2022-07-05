@@ -1,0 +1,219 @@
+* ::before ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general styles */
+body {
+    height: 100vh;
+    width: 100vw;
+    font size: 1rem;
+    font-family: 'Montserrat';
+    background-color: hsl(30, 38%, 92%);
+}
+
+main{
+    height: 85vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* desktop display */
+@media screen and (min-width:725px) {
+    .container{
+        display: grid;
+        grid-template-columns: 325px 375px;
+        height: 450px;
+        width: 650px;
+        border-radius: 10px;
+        background-color:hsl(0, 0%, 100%);
+    }
+
+    /* image display setting */
+    .container-1 img{
+        mix-blend-mode: multiply;
+        width: 325px;
+        height: 450px;
+        border-radius: 10px 0 0 10px;
+    }
+    .container-1 .img-mobile{
+        display: none;
+    }
+
+    /* content display setting */
+    .container-2{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        height: 450px;
+    }
+    .container-2 h2{
+        font-size: 1rem;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%) ;
+        transform: translate(10%, 20px);    
+    }
+
+    .container-2 h1{
+        font-family: 'Fraunces';
+        font-size: 700;
+        font-style: italic;
+        width: 12ch;
+        transform: translate(15%, 0);    
+    }
+    .container-2 p{
+        font-size: 0.8rem;
+        color: hsl(212, 21%, 14%);
+        width: 25ch;
+        margin: 0;
+        transform: translate(18%, 0);    
+    }
+
+    .container-2 .new-price{
+        font-family: 'Fraunces';
+        font-size: 700;
+        font-size: 2rem;
+        color:hsl(158, 36%, 37%);
+        transform: translate(10%, 30px);    
+        text-decoration: none;    
+    }
+
+    .container-2 span{
+        font-family: 'Fraunces';
+        font-size: 0.8rem;
+        color: hsl(228, 12%, 48%);
+        transform: translate(45%, 5px);
+        text-decoration: line-through;    
+
+    }
+    .btn{
+        justify-content: center;
+        background-color: hsl(158, 36%, 37%);
+        height: 50px;
+        width: 275px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+        transform: translate(9%, 35px);    
+
+    }
+    .btn img{
+        width: 14px;
+    }
+
+    .attribution{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .attribution a{
+        text-decoration: none;
+        color: hsl(158, 36%, 37%);
+    }
+}
+@media screen and (max-width:720px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 575px;
+        width: 325px;
+        border-radius: 10px;
+        background-color:hsl(0, 0%, 100%);
+        transform: translate(-1%, 5%);
+    }
+    
+    /* image display setting */
+    .container-1 .img-mobile{
+        mix-blend-mode: multiply;
+        width: 325px;
+        height: 250px;
+        border-radius: 10px 10px 0 0;
+    }
+    .container-1 .img-desktop{
+        display: none;
+    }
+    
+    /* content display setting */
+    .container-2{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        height: 325px;
+    }
+    .container-2 h2{
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%) ;
+        transform: translate(10px, 10px);    
+    }
+    
+    .container-2 h1{
+        font-family: 'Fraunces';
+        font-size: 600;
+        font-style: italic;
+        width: 15ch;
+        font-size: 1.7rem;
+        transform: translate(10px, -10px);    
+    }
+    .container-2 p{
+        font-size: 0.7rem;
+        color: hsl(212, 21%, 14%);
+        width: 33ch;
+        margin: 0;
+        transform: translate(10px, -10px);    
+        }
+    
+    .container-2 .new-price{
+        font-family: 'Fraunces';
+        font-size: 700;
+        font-size: 2rem;
+        color:hsl(158, 36%, 37%);
+        transform: translate(10px, 20px);    
+        text-decoration: none;    
+    }
+    
+    .container-2 span{
+        font-family: 'Fraunces';
+        font-size: 0.8rem;
+        color: hsl(228, 12%, 48%);
+        transform: translate(50%, -5px);
+        text-decoration: line-through;    
+    
+    }
+    .btn{
+        justify-content: center;
+        background-color: hsl(158, 36%, 37%);
+        height: 40px;
+        width: 300px;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+        transform: translate(0, 20px);    
+    
+    }
+    .btn img{
+        width: 14px;
+        transform: translate(-5px, 3px);    
+    }   
+    .attribution{
+        display: block;
+        justify-content: center;
+        align-items: baseline;
+        transform: translate(20%, 95%); 
+        text-align: center;
+        width: 25ch;   
+    }
+    .attribution a{
+        text-decoration: none;
+        color: hsl(158, 36%, 37%);
+    }
+}

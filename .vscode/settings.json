@@ -1,0 +1,9 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 40,
+  "prettier.resolveGlobalModules": true,
+  "cSpell.enableFiletypes": [
+    "html"
+  ]
+}
