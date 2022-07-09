@@ -84,6 +84,7 @@ main{
     .container-2 span{
         font-family: 'Fraunces';
         font-size: 0.8rem;
+        font-weight: 600;
         color: hsl(228, 12%, 48%);
         transform: translate(45%, 5px);
         text-decoration: line-through;    
@@ -182,6 +183,7 @@ main{
     .container-2 span{
         font-family: 'Fraunces';
         font-size: 0.8rem;
+        font-weight: 600;
         color: hsl(228, 12%, 48%);
         transform: translate(50%, -5px);
         text-decoration: line-through;    

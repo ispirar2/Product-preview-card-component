@@ -5,5 +5,6 @@
   "prettier.resolveGlobalModules": true,
   "cSpell.enableFiletypes": [
     "html"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
